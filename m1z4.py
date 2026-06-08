@@ -17,7 +17,7 @@ def xor_decrypt(encrypted_bytes, key):
 
 if __name__ == "__main__":
     phrase = "информатика"
-    key = "рамма"
+    key = "гамма"
 
     print(f"Исходная фраза: {phrase}")
     print(f"Ключ: {key}")
