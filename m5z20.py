@@ -45,7 +45,7 @@ if __name__ == "__main__":
     print(f"Шифротекст E(b) = {cb}")
 
     prod_cipher = multiply_ciphers(ca, cb, p)
-    print(f"\nПроизведение шифротекстов: E(a) ⊗ E(b) = {prod_cipher}")
+    print(f"\nПроизведение шифротекстов: E(a)  E(b) = {prod_cipher}")
 
     decrypted_prod = decrypt(prod_cipher[0], prod_cipher[1], x, p)
     print(f"Расшифрованное произведение: {decrypted_prod}")
