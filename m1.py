@@ -38,3 +38,10 @@ def evaluate_password(password):
         strength = "сильный"
     
     return entropy, strength
+    
+if __name__ == "__main__":
+    pwd = generate_password(12)
+    ent, strength = evaluate_password(pwd)
+    print(f"Сгенерированный пароль: {pwd}")
+    print(f"Энтропия: {ent:.2f} бит")
+    print(f"Стойкость: {strength}")
